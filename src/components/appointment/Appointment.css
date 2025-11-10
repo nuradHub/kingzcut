@@ -1,0 +1,212 @@
+.appointment-section{
+  display: flex;
+  width: 100%;
+  align-items: start;
+  height: 550px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.shaving-image{
+  width: 100%;
+  flex: 1;
+  height: 100%;
+}
+.shaving-image img{
+  width: 100%;
+  height: 100%;
+}
+.book-appointment{
+  flex: 1;
+  width: 100%;
+  background-image: url(/satellite-map.png);
+  background-color: rgba(0, 0, 0, 0.95);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+}
+.appointment-form{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+  padding: 20px 60px;
+  color: rgb(219, 219, 219);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.appointment-form h4{
+  font-size: 35px;
+}
+.appointment-form p{
+  font-size: 13px;
+}
+.text-email-inputs,
+.tel-time-inputs,
+.select-services{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.text-email-inputs input,
+.tel-time-inputs input{
+  width: 100%;
+  padding: 15px 10px;
+  border: 2px solid rgb(63, 63, 63);
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-size: 17px;
+}
+.text-email-inputs input:focus,
+.tel-time-inputs input:focus{
+  outline: none;
+}
+.tel-time-inputs input{
+  margin-top: 15px;
+}
+input[type="time" i]::-webkit-calendar-picker-indicator {
+  background-color: rgb(51, 51, 51);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.select-services{
+  margin-top: 15px;
+}
+.select-services select{
+  width: 100%;
+  padding: 15px 5px;
+  border: 2px solid rgb(63, 63, 63);
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-size: 17px;
+}
+.appointment-form input[type='date'],
+.appointment-form #location{
+  margin-top: 15px;
+  width: 100%;
+  padding: 15px 10px;
+  border: 2px solid rgb(63, 63, 63);
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-size: 17px;
+}
+.appointment-form input[type="date" i]::-webkit-calendar-picker-indicator {
+  background-color: rgb(51, 51, 51);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.appointment-form .button-container{
+  width: 100%;
+}
+.appointment-form .button-container button{
+  width: 200px;
+  margin-top: 15px;
+  border-radius: 2px;
+  padding: 15px 10px;
+  font-size: 17px;
+  border: none;
+  background-color: rgba(53, 15, 15, 0.9);
+  color: white;
+  cursor: pointer;
+}
+
+/* Media Query */
+@media screen and (max-width: 820px) {
+.appointment-section{
+  display: flex;
+  align-items: flex-start;
+  height: auto;
+  gap: 80px;
+}
+.shaving-image{
+  display: none;
+}
+.book-appointment{
+  flex: 3;
+  height: auto;
+  padding: 40px 0;
+}
+.appointment-form{
+  gap: 40px;
+  height: auto;
+  margin: auto;
+  padding: 20px 60px;
+  background-color: transparent;
+}
+.appointment-form h4{
+  font-size: 45px;
+}
+.appointment-form p{
+  font-size: 15px;
+}
+.text-email-inputs input,
+.tel-time-inputs input{
+  font-size: 20px;
+}
+.tel-time-inputs input{
+  margin-top: 20px;
+}
+.select-services{
+  margin-top: 20px;
+}
+.appointment-form input[type='date']{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.appointment-form .button-container{
+  width: 100%;
+}
+.appointment-form .button-container button{
+  width: 230px;
+  margin-top: 20px;
+  padding: 20px 15px;
+  font-size: 20px;
+}
+}
+
+@media screen and (max-width: 540px) {
+.appointment-form{
+  padding: 20px 30px;
+}
+.appointment-form h4{
+  font-size: 36px;
+}
+.appointment-form p{
+  font-size: 15px;
+}
+.text-email-inputs,
+.tel-time-inputs{
+  flex-direction: column;
+}
+.text-email-inputs input,
+.tel-time-inputs input{
+  font-size: 20px;
+  padding: 20px;
+}
+.tel-time-inputs{
+  gap: 10px;
+}
+.tel-time-inputs input{
+  margin-top: 20px;
+}
+.select-services{
+  flex-direction: column;
+  margin-top: 20px;
+}
+.select-services select{
+  padding: 20px 5px;
+}
+}
+
+@media screen and (max-width: 390px) {
+.appointment-form h4{
+  font-size: 33px;
+}
+}
+
+@media screen and (max-width: 360px) {
+.appointment-form h4{
+  font-size: 30px;
+}
+}

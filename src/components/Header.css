@@ -1,0 +1,114 @@
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #1d1d1d;
+  background-color: rgba(0, 0, 0, 0.842);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.header-container .logo-container{
+  width: 100px;
+}
+.header-container .logo-container img{
+  width: 100%;
+}
+.navs-container ul{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 18px;
+}
+.navs-container ul li{
+  flex: 1;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+}
+.navs-container ul li::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.navs-container ul li:hover::after{
+  width: 100%;
+}
+.header-container .fa-bars,
+.header-container .fa-times{
+  font-size: 35px;
+  display: none;
+  z-index: 2;
+}
+
+/* Media Query */
+@media screen and (max-width: 820px) {
+.header-container{
+  padding: 20px 30px;
+}
+.navs-container ul{
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.925);
+  align-items: center;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  gap: 35px;
+  font-size: 20px;
+  padding: 40px 0;
+  transition: all 0.5s ease-in-out;
+}
+.navs-container ul.toggle-navs-container{
+  top: 6%;
+}
+.navs-container ul li{
+  flex: 1;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.navs-container ul li::after{
+  background-color: rgb(253, 253, 253);
+  transition: all 0.3s ease;
+  height: 2px;
+}
+.header-container .fa-bars,
+.header-container .fa-times{
+  display: block;
+}
+}
+
+@media screen and (max-width: 430px) {
+.header-container{
+  padding: 20px 20px;
+}
+.navs-container ul.toggle-navs-container{
+  top: 7%;
+}
+}
+
+@media screen and (max-width: 412px) {
+.navs-container ul.toggle-navs-container{
+  top: 7%;
+}
+}
+@media screen and (max-width: 390px) {
+.navs-container ul.toggle-navs-container{
+  top: 8%;
+}
+}

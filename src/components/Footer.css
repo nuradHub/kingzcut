@@ -1,0 +1,124 @@
+.footer-container{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #222227;
+  padding: 40px 70px;
+  gap: 50px;
+}
+.contact-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.more-about-kingzcut{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 270px;
+  width: 100%;
+}
+.more-about-kingzcut img{
+  width: 100px;
+}
+.more-about-kingzcut p{
+  color: rgb(158, 158, 158);
+}
+.more-about-kingzcut .kingz-cut-icon a {
+  text-decoration: none;
+}
+.more-about-kingzcut .kingz-cut-icon a img{
+  width: 30px;
+}
+.head-quarters-address,
+.opening-hours-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 270px;
+  width: 100%;
+}
+.head-quarters-address h3,
+.opening-hours-container h3{
+  color: rgb(190, 190, 190);
+}
+.head-quarter,
+.opening-hours{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(158, 158, 158);
+}
+.copyright-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(158, 158, 158);
+}
+.copyright-container .copy-right{
+  font-size: 15px;
+}
+.copyright-container .more-info{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.copyright-container .more-info a{
+  text-decoration: none;
+  color: rgb(158, 158, 158);
+  font-size: 15px;
+  cursor: pointer;
+}
+.copyright-container .more-info a:hover{
+  color: rgb(211, 51, 51);
+}
+
+/* Media Query */
+@media screen and (max-width: 912px) {
+.footer-container{
+  padding: 40px 40px;
+  gap: 70px;
+}
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 50px;
+}
+.more-about-kingzcut{
+  gap: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+.head-quarters-address,
+.opening-hours-container{
+  max-width: 300px;
+}
+.head-quarter,
+.opening-hours{
+  gap: 20px;
+}
+}
+
+@media screen and (max-width: 540px) {
+.copyright-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.copyright-container .copy-right{
+  font-size: 15px;
+}
+.copyright-container .more-info{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.copyright-container .more-info a{
+  text-decoration: none;
+  color: rgb(158, 158, 158);
+  font-size: 15px;
+  cursor: pointer;
+}
+}

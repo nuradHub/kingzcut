@@ -1,0 +1,70 @@
+.form-submit-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  margin-top: 120px;
+}
+.form-submit-response{
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 30px;
+  width: 500px;
+  font-family: 'Gill Sans MT';
+}
+.form-submit-response .logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.form-submit-response img{
+  width: 100px;
+}
+.form-submit-response h4{
+  font-size: 40px;
+  
+}
+.form-submit-response p{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-submit-response p span{
+  font-size: 30px;
+  font-weight: bold;
+}
+.form-submit-response p a{
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* media query */
+
+@media screen and (max-width: 430px) {
+.form-submit-response{
+  gap: 30px;
+  padding: 20px 30px;
+  width: 370px;
+}
+.form-submit-response h4{
+  font-size: 35px;
+  
+}
+.form-submit-response p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.form-submit-response p span{
+  font-size: 30px;
+  font-weight: bold;
+}
+.form-submit-response p a{
+  text-decoration: none;
+} 
+}
