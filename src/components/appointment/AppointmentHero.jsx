@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Kinzcut from "../../assets/img/kingz-cut-main.png";
 import Appointment from "./Appointment";
 import './AppointmentHero.css'
+import '../About.css'
 
 const AppointmentHero = ()=> {
 
